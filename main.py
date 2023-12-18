@@ -113,7 +113,9 @@ if __name__ == "__main__":
     print(' STARTING...')
     threading.Thread(target=status_board, daemon=True).start()
 
-    loop = asyncio.get_event_loop()
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+
     tasks = [check_url(i) for i in range(threads)]
     try:
         loop.run_until_complete(asyncio.gather(*tasks))
