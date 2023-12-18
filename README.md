@@ -6,7 +6,7 @@ The script takes from file extensions specified under config.yaml, generates ran
 
 `https://files.catbox.moe/[a-z0-9]{6}.(extension)` is the format for URL generation.
 
-## Installation
+## Installation and Usage
 You will need:
 - Python
 - Git
@@ -17,6 +17,8 @@ pip install -r requirements.txt
 python main.py
 ```
 and the script will handle everything else from there!
+
+Press CTRL+C to stop the script.
 
 ## Configuration
 If you wish to change the extensions the script attempts to check for, simply edit `config.yaml`'s `file_extensions` field with the extensions you wish to check for:
