@@ -21,7 +21,7 @@ with open(CONFIG_FILE, 'r') as config_file:
 
 file_extensions = config['file_extensions']
 threads = config['threads']
-
+update_rate = config['update_rate']
 
 urls_scanned = 0
 valid_found = 0
@@ -76,7 +76,7 @@ def status_board():
             sys.stdout.write(f'\033[6;1H PER SECOND   : {int(urls_scanned / elapsed_time):,}\n')
             sys.stdout.write('\033[10;1H[-----------------------]\n')
             sys.stdout.flush()
-        time.sleep(0.01)
+        time.sleep(update_rate)
 
 async def check_url(_):
     global urls_scanned, valid_found
