@@ -12,7 +12,7 @@ import threading
 
 CONFIG_FILE = 'config.yaml'
 URL = 'https://files.catbox.moe/'
-os.system('color')
+os.system('')
 sys.stdout.write('\033[?25l')
 
 
@@ -31,6 +31,12 @@ status_board_running = True
 print_lock = asyncio.Semaphore()
 file_lock = asyncio.Lock()
 
+
+def clear_screen():
+    if sys.platform == 'linux' or sys.platform == 'linux2':
+        os.system('clear')
+    elif sys.platform == 'win32':
+        os.system('cls')
 
 def random_string(length=6):
     return ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(length))
@@ -100,6 +106,7 @@ async def check_url(_):
 
 
 if __name__ == "__main__":
+    clear_screen()
     print(" CATBOX SCRAPER")
     print("[==============]")
     print("    BY DOOT\n")
