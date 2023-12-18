@@ -1,0 +1,11 @@
+threads: 550
+file_extensions:
+  - .png
+  - .gif
+  - .jpg
+  - .jpeg
+  - .webm
+  - .mp4   # usually the one that takes up the most storage space.
+  # customise with whatever you want to look for!
+  # obviously, some will be rarer than others
+  # but you can find zips, txt files, etc. tons of stuff.
