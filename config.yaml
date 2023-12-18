@@ -6,7 +6,82 @@ file_extensions:
   - .jpeg
   - .webm
   - .mp4   # usually the one that takes up the most storage space.
-  
-  # customise with whatever you want to look for!
-  # obviously, some will be rarer than others
-  # but you can find zips, txt files, etc. tons of stuff.
+
+# customise with whatever you want to look for!
+# obviously, some will be rarer than others
+# but you can find zips, txt files, etc. tons of
+
+# below are a ton of templates that you can use and common file extensions for each type
+# to use them, simply uncomment them and remove the file_extensions header and contents above.
+# or you can just pick and choose from the lists below to add to your list :)
+
+# IMAGES
+# file_extensions:
+#   - .png
+#   - .gif
+#   - .jpg
+#   - .jpeg
+#   - .bmp
+#   - .tif
+#   - .tiff
+#   - .webp
+
+# VIDEOS
+# file_extensions:
+#   - .webm
+#   - .mp4
+#   - .mov
+#   - .avi
+#   - .mkv
+#   - .flv
+#   - .wmv
+
+# CODE
+# file_extensions:
+#   - .html
+#   - .css
+#   - .js
+#   - .jsx
+#   - .ts
+#   - .tsx
+#   - .php
+#   - .py
+#   - .rb
+#   - .java
+#   - .cpp
+#   - .c
+#   - .cs
+#   - .swift
+#   - .go
+#   - .bat
+
+
+# DOCUMENTS
+# file_extensions:
+#   - .txt
+#   - .md  
+#   - .pdf
+#   - .doc
+#   - .docx
+#   - .odt
+#   - .rtf
+
+
+# COMPRESSED/ARCHIVES
+# file_extensions:
+#   - .zip
+#   - .rar
+#   - .7z
+#   - .tar
+#   - .gz
+#   - .bz2
+#   - .xz
+
+# AUDIO
+# file_extensions:
+#   - .mp3
+#   - .wav
+#   - .aac
+#   - .flac
+#   - .ogg
+#   - .m4a
