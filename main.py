@@ -86,7 +86,7 @@ async def check_url(_):
                 filename = random_string() + ext
                 random_url = URL + filename
                 try:
-                    async with session.get(random_url, timeout=5) as response:
+                    async with session.head(random_url, timeout=5) as response:
                         urls_scanned += 1
 
                         if response.status == 200:
