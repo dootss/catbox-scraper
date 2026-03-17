@@ -1,5 +1,11 @@
 # Catbox Scraper
 
+---
+
+**[NOTE] catbox implemented ratelimits like ages ago. i just realised i can and should probably archive this repo. this will still work if you set the speeds super low, or modify it to use proxies, i guess**
+
+---
+
 An extremely fast python script for scraping and downloading random files from [Catbox](https://catbox.moe), a file-hosting site.
 
 The script takes from file extensions specified under config.yaml, generates random urls and checks to see if they are valid. If they are, it downloads them and stores them in extension-sorted folders.
